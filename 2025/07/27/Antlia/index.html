@@ -1,0 +1,481 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.jpg"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.jpg">
+	
+			    <title>
+    真的真的也没有
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="真的真的也没有" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/bg.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 7.3.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo"></a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        <a class="category-link" href="/categories/Shell/">Shell</a>
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/zhende1113" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://cnb.cool/zhende1113/Antlia/-/releases/download/Antlia-Data/1359ec5638804b0ddaded03ffe596400_720.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >Antlia-更好的部署Eridanus</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="Antlia"><a href="#Antlia" class="headerlink" title="Antlia"></a>Antlia</h1><p> <a target="_blank" rel="noopener" href="https://cnb.cool/zhende1113/Antlia">项目地址</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O Antlia.sh https://cnb.cool/zhende1113/Antlia/-/git/raw/main/Antlia.sh &amp;&amp; <span class="built_in">chmod</span> +x Antlia.sh &amp;&amp; ./Antlia.sh</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>安装前的准备</li>
+</ol>
+<ul>
+<li>是Linux发行版系统 建议选择<strong>debian</strong>喵 稳定 支持性好</li>
+<li>软件包管理器受到支持 支持的软件包管理器包括<strong>apt</strong> <strong>yum&#x2F;dnf</strong> <strong>pacman</strong> 脚本基本适配主流Linux GNU发行版  </li>
+<li>请确保你的 <strong>miniconda3</strong> 没有安装或卸载 这可能影响安装环境  </li>
+<li>良好的网络</li>
+</ul>
+<p>卸载流程miniconda3</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~  <span class="comment">#切换到默认目录  </span></span><br><span class="line"><span class="built_in">ls</span>  <span class="comment">#查看是否含有miniconda或者miniconda3目录  </span></span><br><span class="line"><span class="built_in">cd</span> miniconda  <span class="comment">#切换目录  </span></span><br><span class="line">bash uninstall.sh <span class="comment">#执行卸载脚本  </span></span><br><span class="line">输入<span class="built_in">yes</span> <span class="comment">#确认 出现done成功 如果报错执行的时候加suso  </span></span><br><span class="line"><span class="built_in">cd</span> .. <span class="comment">#回到原目录  </span></span><br><span class="line"><span class="built_in">source</span> ~/.bash/zsh/fish rc <span class="comment">#更新配置 </span></span><br></pre></td></tr></table></figure>
+
+<p>恭喜你完成了卸载miniconda的流程</p>
+<ol start="2">
+<li><p>开始安装</p>
+<p>本教程采用的系统是：<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAAqFBMVEUAAAADAAEMAAMIAAKlAC8GAAIPAAQ3AA8oAAunAC9oAB1JABWhAC5kABxLABUvAA0iAAp0ACFeABtDABMsAAwTAAWUACqSACl6ACJbABpXABhHABQ8ABEaAAcXAAYKAAOjAC6bACyPACmCACU/ABIzAA6fAC1/ACRtAB5SABclAAsdAAidAC2aACyIACdxACBOABYgAAmXACuLACd3ACKFACaWACuoADDVP6CqAAAAN3RSTlMABRMN+wkXVDz9nm/0l3JINLCQZkMd4d25ioRsWycjD/js2cZhTvLBpX05LO7pz6x4MObUtcrkXYQQeAAAAxlJREFUWMPtltmWojAQhsMuKCIubArt0u771v/7v9mYlpFjIEiPuZg5Z/4bj0n5WamqpIr8k5Jk7V1EEkb7qLs6KkSX38B0XRNUfuBvxmrQUf4MY+zAaNZOiCz91JsrCmSe0Gj9KLxtcDWzq6Ns5lTqrPH0NZKqubPAQ5vQWR/pz+TVYLF5LF+0Khz3YT8KP552pnOkCpQfcIbuKrc7mKWb85c+WamlbxQGIh6n+/YLTi212/U4Br2v1GJaypFP93pxB1yT9SYNoF4GWoLqa1XqdFoLFs8gToi2pRYTnZSqnpZTwvsnhfSpgfuy3Cb3rC65Bn3qdMBwOBnZJGGHt/9BOROmQLgurT8GZWffFsRH77T39nJNMnVoiHprjj+E1togj7GGOC3a9mS+ztZMasp5NFtd3GSwy0cP1upeY5/Z5hiY1UlxFDR6Oc45f7aek5Xrw4cAQIsUp0XaFJxMuniFB2gCaJNiOTTU7H/YQ/Y5zKJ94IDo6xqyN1TlFN1nyf0/AOiycLPHB6mcPXo9YqYiZkEut9nRJoQPUpiehGYukg/31YgParA9EgY/oH6Lf0H8XCTqHOOIJkbigiY5j+Zs1aafC6Cv8EH73HPhMeWQZkNpYKTIpDJIUc3kqc7r2n3dBiLCAzUBl12bI+TkRdWJxgflqsbAKO21Sb2ZvVQLjDs01Nxi9XJN7ILF7+KMM0sVA8LXFECNadCa7qFT0LJ2tRLQEWAL2Ynl1tB8XtRd4FI6Qmgq0Mm9mkltC0vP8midAPtFnzkDV3ZNcqbxGbNo/U3pHjxgZFSYQ/yCHrbv0qnIC4L5EEAjlF+PscUjRm8/6dhXCsHJ/awyIssqsIuL+otdryly0qs8Z7sAzKgwEc7y0J9WBn03NjUm74u22pEjANTETW+CsnHE1wSQDrjpKAAknelYLwkg1QD6BAmQBSASAZK/AHUlgnRsAJ4ugjQ1gZFGBJXlkohQG1ANXYhPJuDLIkjG8EaaiiCttsCCiJBsmbg6ighU7QyM+yJIUn0MM5SIEK+sxs6QhaAUp2m1P1sa+a+/SL8Ao8GEb5laAHYAAAAASUVORK5CYII=" alt="img"> 宝塔面板9.0 [Debian12&#x2F;LNMP] 雨云一元试用机子 建议debian很稳定的</p>
+</li>
+</ol>
+<ul>
+<li><p>连接你的Linux服务器  </p>
+<ul>
+<li><p>Windows连接</p>
+<p>第一步下载finalShell <a target="_blank" rel="noopener" href="https://www.hostbuf.com/">官网</a> <a target="_blank" rel="noopener" href="https://dl.hostbuf.com/finalshell3/finalshell_windows_x64.exe">下载连接</a></p>
+<p>下载 下一步 安装 确定 安装完成</p>
+<p>进入界面</p>
+<img src="/home/zhende1113/blog/blog/source/img/finalshell1.png" alt="FianalShell主界面" style="zoom:50%;" />
+
+<p>点击左上角文件夹</p>
+<img src="/home/zhende1113/blog/blog/source/img/final2.png" alt="图片"  />
+
+<p><img src="/home/zhende1113/blog/blog/source/img/final3.png" alt="点击后的界面"></p>
+<p>在点击左上角的添加</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/final4.png" alt="Ciallo～(∠・ω&lt; )⌒★"></p>
+<p>出现选择 选择ssh连接linux</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/final5.png" alt="Ciallo～(∠・ω&lt; )⌒★"></p>
+<p>应该这个样子</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/final6.png" alt="Ciallo～(∠・ω&lt; )⌒★"></p>
+<p>名称自己填 主机就是ip地址 端口有独立ip不动 不是独立自己填端口 账号默认root 密码服务器提供商给的 填好的一个例子</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/final7.png" alt="这是例子Ciallo～(∠・ω&lt; )⌒★"></p>
+<p>点确定 双击创建的</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/final8.png"></p>
+<p>出现这个界面</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/final9.png" alt="这个界面"></p>
+<p> 点接受并保存</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/final10.png" alt="Ciallo～(∠・ω&lt; )⌒★"></p>
+<p>  连接成功</p>
+<ul>
+<li><p>Linux连接</p>
+<ul>
+<li><p>安装openssh</p>
+</li>
+<li><p>apt系 debian</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt-get install ssh</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>yum&#x2F;dnf cent系</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install openssh</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>pacman arch系</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> pacman -S openssh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>服务器是<strong>挂机宝</strong>&#x2F;<strong>Nat</strong>的 地址是  ip:端口 命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   ssh -p 这是端口如14514 用户名默认root@ip地址 </span><br><span class="line">   如</span><br><span class="line">   ssh -p 14514 root@192.168.31.31</span><br><span class="line">  ````</span><br><span class="line">  </span><br><span class="line">* 服务器属于独立ip地址是  ip 命令</span><br><span class="line">  ```bash</span><br><span class="line">  ssh 用户名如root@ip </span><br><span class="line">  如</span><br><span class="line">  ssh root@192.168.31.31</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>登陆</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host &#x27;171.80.1.91 (171.80.1.91)&#x27; can&#x27;t be established.</span><br><span class="line">ED25519 key fingerprint is SHA256:Va2PkWmvb5tmzu7Ri8/Dgntr24CI9ghfbVqPPvtJyIE.</span><br><span class="line">This key is not known by any other names.</span><br><span class="line">Are you sure you want to continue connecting (yes/no/[fingerprint])? </span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>出现这样的提醒输入yes</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Warning: Permanently added &#x27;171.80.1.91&#x27; (ED25519) to the list of known hosts.</span><br><span class="line">root@171.80.1.91&#x27;s password: </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>输密码登陆 linux输入密码不显示</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@RainYun-NhM1nw7o:~# </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>连接成功</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>开始安装</p>
+<p>连接上服务器现更新一下软件源</p>
+<p>apt</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update</span><br></pre></td></tr></table></figure>
+
+<p>yum</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum makecache</span><br></pre></td></tr></table></figure>
+
+<p>dnf</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dnf makecache</span><br></pre></td></tr></table></figure>
+
+<p>pacman</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Sy</span><br></pre></td></tr></table></figure>
+
+<p>替换源以debian为例</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> /etc/apt/sources.list /etc/apt/sources.list.bak <span class="comment">#备份</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed -i <span class="string">&#x27;s/deb.debian.org/mirrors.ustc.edu.cn/g&#x27;</span> /etc/apt/sources.list <span class="comment">#替换</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update <span class="comment">#更新</span></span><br></pre></td></tr></table></figure>
+
+<p>完成</p>
+<ul>
+<li>添加非root账户</li>
+</ul>
+<p>  输入adduser 用户</p>
+<p>  例子</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adduser zhende1113</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">root@RainYun-NhM1nw7o:~# adduser zhende1113 #你创建的用户</span><br><span class="line">Adding user `zhende1113&#x27; ...</span><br><span class="line">Adding new group `zhende1113&#x27; (1002) ...</span><br><span class="line">Adding new user `zhende1113&#x27; (1002) with group `zhende1113 (1002)&#x27; ...</span><br><span class="line">Creating home directory `/home/zhende1113&#x27; ...</span><br><span class="line">Copying files from `/etc/skel&#x27; ...</span><br><span class="line">New password: #你的密码</span><br><span class="line">Retype new password: #二次确认</span><br><span class="line">passwd: password updated successfully #密码添加成功</span><br><span class="line">Changing the user information for zhende1113 #用户信息</span><br><span class="line">Enter the new value, or press ENTER for the default # Enter为默认</span><br><span class="line">        Full Name []: #Enter</span><br><span class="line">        Room Number []: #Enter</span><br><span class="line">        Work Phone []: #Enter</span><br><span class="line">        Home Phone []: #Enter</span><br><span class="line">        Other []: #Enter</span><br><span class="line">Is the information correct? [Y/n] y #要不要开启使用这个账号进行远程登陆 推荐y以后连接方便</span><br><span class="line">Adding new user `zhende1113&#x27; to supplemental / extra groups `users&#x27; ...</span><br><span class="line">Adding user `zhende1113&#x27; to group `users&#x27; ...#添加完成</span><br><span class="line">root@RainYun-NhM1nw7o:~# </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>给这个用户sudo文件</li>
+</ul>
+<p>  debian预装 其他基本也是 如果没有在安装</p>
+<p>  安装vim</p>
+<p>  apt系</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt install vim</span><br></pre></td></tr></table></figure>
+
+<p>  yum系</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install vim</span><br></pre></td></tr></table></figure>
+
+<p>  dnf</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dnf install vim</span><br></pre></td></tr></table></figure>
+
+<p>  pacman</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S vim</span><br></pre></td></tr></table></figure>
+
+<p>  使用vim编辑&#x2F;etc&#x2F;sudoers</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sudoers</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sudoers</span><br></pre></td></tr></table></figure>
+
+<p>  <img src="/home/zhende1113/blog/blog/source/img/sudoers.png" alt="sudoers"></p>
+<p>  教你们vim怎么用</p>
+<p>  输入i进行编辑</p>
+<p>  <img src="/home/zhende1113/blog/blog/source/img/sudoers1-i.png" alt="vim-i"></p>
+<p>  这样的</p>
+<p>  方向键上下左右移动光标 鼠标上下滚动</p>
+<p>  <img src="/home/zhende1113/blog/blog/source/img/sudo-insert.png" alt="Ciallo～(∠・ω&lt; )⌒★"></p>
+<p>  找到画出的地方  vim此时进入可视状态点一下退出</p>
+<p>  在root下面填入</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">你的用户名 ALL=(ALL:ALL) ALL</span><br></pre></td></tr></table></figure>
+
+<p>  <img src="/home/zhende1113/blog/blog/source/img/sudoers-sudo.png" alt="编辑好的样子"></p>
+<p>  修改完成的样子</p>
+<p>  教大家怎么保存退出</p>
+<p>  Esc先退出状态这个<strong>一定</strong>要有</p>
+<p>  输入:选择选项必须是英文符号 shift切换输入法</p>
+<p>  w写入 q退出 !强制退出或者写入</p>
+<p>  示范 保存退出常用</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:wq</span><br></pre></td></tr></table></figure>
+
+<p>  强制保存退出</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:wq!</span><br></pre></td></tr></table></figure>
+
+<p>  写入</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:w</span><br></pre></td></tr></table></figure>
+
+<p>  退出</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:q</span><br></pre></td></tr></table></figure>
+
+<p>  强制加一个!</p>
+<p>  <img src="/home/zhende1113/blog/blog/source/img/sudo-vim111.png"></p>
+<p>  回车完成</p>
+<p>  <img src="/home/zhende1113/blog/blog/source/img/vim-e.png" alt="vim-e"></p>
+<p>  如果这样怎么办不要害怕不要哭</p>
+<p>  这样报错的加!就可以了</p>
+<p>  <img src="/home/zhende1113/blog/blog/source/img/vim-back.png" alt="回到终端"></p>
+<p>  完成</p>
+<p>  切换用户</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">su 您的用户名</span><br><span class="line">比如</span><br><span class="line">su zhende1113</span><br></pre></td></tr></table></figure>
+
+<p>  <img src="/home/zhende1113/blog/blog/source/img/su-user.png" alt="su-user"></p>
+<p>  正确✅</p>
+<p>  这里就引入了一个基础命令cd</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="comment">#文件夹名称</span></span><br><span class="line">如</span><br><span class="line"><span class="built_in">cd</span> bot</span><br><span class="line"><span class="built_in">cd</span> /</span><br><span class="line"><span class="built_in">cd</span> <span class="comment">#退出</span></span><br><span class="line"><span class="built_in">cd</span> .. <span class="comment">#退出一级</span></span><br><span class="line"><span class="built_in">cd</span> ../.. <span class="comment">#退出2级</span></span><br></pre></td></tr></table></figure>
+
+<p>  我们来切换到这个用户的初始路径吧</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br></pre></td></tr></table></figure>
+
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zhende1113@RainYun-NhM1nw7o:/root$ cd ~</span><br><span class="line">zhende1113@RainYun-NhM1nw7o:~$ </span><br><span class="line">正确的</span><br></pre></td></tr></table></figure>
+
+<p>  自此我们创建了用户给了sudo权限开始正式的安装吧</p>
+<ul>
+<li><p>正式的部署</p>
+<p>检查wget有没有安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">zhende1113@RainYun-NhM1nw7o:~$ wget</span><br><span class="line">wget: missing URL</span><br><span class="line">Usage: wget [OPTION]... [URL]...</span><br><span class="line"></span><br><span class="line">Try `wget --<span class="built_in">help</span><span class="string">&#x27; for more options.</span></span><br><span class="line"><span class="string">zhende1113@RainYun-NhM1nw7o:~$ </span></span><br><span class="line"><span class="string"></span></span><br></pre></td></tr></table></figure>
+
+<p>这样有选项的是正常的没有就安装</p>
+<p>apt</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install wget</span><br></pre></td></tr></table></figure>
+
+<p>yum</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> yum install wget</span><br></pre></td></tr></table></figure>
+
+<p>dnf</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">suso dnf install wget</span><br></pre></td></tr></table></figure>
+
+<p>pacman</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> pacman -S wget</span><br></pre></td></tr></table></figure>
+
+<p>下载一键安装脚本</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -O Antlia.sh https://cnb.cool/zhende1113/Antlia/-/git/raw/main/Antlia.sh &amp;&amp; <span class="built_in">chmod</span> +x Antlia.sh &amp;&amp; ./Antlia.sh</span><br></pre></td></tr></table></figure>
+
+<p><img src="/home/zhende1113/blog/blog/source/img/install-eridanus.png" alt="安装"></p>
+<p>密码输入创建的密码</p>
+<p>接着跑日志安装依赖</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/installntqq.png" alt="ntqq"></p>
+<p>建议都选喵</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/clone1111.png"></p>
+<p>克隆源如果选错就是神秘源回车默认1 网络好的选择1</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/INSTALL-Done.png"></p>
+<p>安装完成</p>
+</li>
+</ul>
+<ol start="3">
+<li><p>启动!!!!!!!!!</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./start.sh</span><br></pre></td></tr></table></figure>
+
+<p><img src="/home/zhende1113/blog/blog/source/img/start-shell.png"></p>
+<p>启动脚本</p>
+<p>先进2</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/start-lag1.png"></p>
+<p>选择1前台启动</p>
+<p><img src="/home/zhende1113/blog/blog/source/img/start111111-lag.png"></p>
+<p>扫码登陆 推荐勾选下次登陆无需手动确认</p>
+<p>ctrl c 停止</p>
+<p>然后在一键启动 自行发掘吧</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a target="_blank" rel="noopener" href="https://github.com/AOrbitron/Eridanus">bot项目Eridanus</a></p>
+<p><a target="_blank" rel="noopener" href="https://eridanus-doc.netlify.app/">bot文档</a></p>
+<p><a target="_blank" rel="noopener" href="https://cnb.cool/zhende1113/Antlia">Antlia项目</a></p>
+<h3 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h3><p>napcat archlinux系统的部署提供了思路</p>
+<p><a target="_blank" rel="noopener" href="https://gitee.com/tangxi714/linux_script/">项目地址</a></p>
+<p>项目群聊 913122269</p>
+<p>end</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://zhende1113.github.io/2025/07/27/Antlia/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://zhende1113.github.io/2025/07/27/Antlia/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
